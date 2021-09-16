@@ -1,0 +1,16 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 4px #3500D3 solid;
+    margin: 200px;
+    box-shadow: 6px 6px 0 black;
+}
+

@@ -17,10 +17,6 @@ function countdown() {
             timer.textContent = 0;
             clearInterval(timeInterval);
         }
-        if(timeLeft=0) {
-            clearInterval()
-        
-        }
     }, 200);
 }
 

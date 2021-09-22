@@ -1,11 +1,14 @@
-
-
 header {
     display: flex;
     justify-content: space-between;
 }
 
-section {
+.high-scores {
+    font-size: 20px;
+    font-weight: bold;;
+}
+
+.main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -13,4 +16,5 @@ section {
     margin: 200px;
     box-shadow: 6px 6px 0 black;
 }
+
 

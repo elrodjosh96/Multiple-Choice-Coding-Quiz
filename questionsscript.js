@@ -81,6 +81,9 @@ function displayQuestion() {
     answerThree.innerHTML = questions[questionNum].answers[2]
     console.log(questions[questionNum].answers[0])
     questionNum++;
+    if (questionNum > questions.length) {
+        displayScore()
+    }
     // if statement
     //got to questions at [i] 
     //display question
@@ -90,7 +93,12 @@ function displayQuestion() {
     //answer checking
 }
 //for (var i=0; i < questions.length; i++) { 
+function displayScore() {
 
+
+    // display the score, show record score button
+    // record score button will have highScore() as callback
+}
 answerOne.addEventListener('click', function(event) {
     checkAnswers(event.target.innerHTML);
     displayQuestion();
@@ -116,5 +124,14 @@ function checkAnswers(userAnswer) {
         timer.textContent = timeLeft;
         console.log(timeLeft)
         
+    }
+}
+//points formula needed
+//function wrap up game
+//display button submits highscore, delegate event(event listener)
+function highScoreFunction() {
+    const currentHighScore = localStorage.getItem('highscore')||0;
+    if (score > parseInt(currentHighScore)) {
+        localStorage.setItem('highscore', timeLeft)
     }
 }
